@@ -34,23 +34,6 @@ mlflow run MLProject --env-manager=local
 
 `--env-manager=local` berarti MLflow menggunakan environment Python yang sedang aktif (venv) tanpa membuat conda environment baru.
 
-### 3. Lihat hasil di MLflow UI (opsional)
-
-```bash
-mlflow ui
-```
+### 3. Lihat hasil di MLflow UI
 
 Buka browser ke `http://localhost:5000` untuk melihat metrics, parameter, dan artifacts.
-
-## Yang Dicatat Otomatis (autolog)
-
-| Kategori  | Detail                                                                            |
-| --------- | --------------------------------------------------------------------------------- |
-| Parameter | `n_estimators`, `max_depth`, `min_samples_split`, dll                             |
-| Metrics   | `test_accuracy`, `test_precision`, `test_recall`, `test_f1_score`, `test_roc_auc` |
-| Artifacts | Model (pickle), feature importance, confusion matrix                              |
-
-## Catatan
-
-- Warning `Failed to resolve installed pip version` bersifat non-blocking dan dapat diabaikan — run tetap berhasil.
-- Hasil run tersimpan di folder `mlruns/` di direktori root project.
