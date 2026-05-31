@@ -1,0 +1,13 @@
+name: adult-income-mlops
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.7
+  - pip=23.2.1
+  - pip:
+      - mlflow==2.19.0
+      - pandas
+      - scikit-learn
+      - numpy
+      - matplotlib
+      - joblib
